@@ -1,131 +1,112 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Textdiagnose</title>
-<style>
+  <meta charset="UTF-8">
+  <title>Textdiagnose (bis 10.000 Wörter) – PDF-Analyse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manuelle Textdiagnose bis 10.000 Wörter. Präzise Analyse als PDF. Keine Automatisierung, keine Floskeln.">
+  <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0e0e0e;
-        color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #ffffff;
+      color: #111;
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
     }
-    Abschnitt {
-        display: block;
-        padding: 60px 20px;
-        max-width: 700px;
-        margin: 0 auto;
-    }
-    .Held {
-        text-align: center;
-    }
-    .Held-inner h1 {
-        font-size: 42px;
-        margin-bottom: 20px;
-    }
-    .führen {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 16px;
-    }
-    .Preis {
-        font-size: 22px;
-        margin-top: 30px;
-        font-weight: bold;
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0.4em;
     }
     h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
+      font-size: 1.1em;
+      margin-top: 2em;
     }
-    .Bank {
-        font-size: 20px;
-        letter-spacing: 1px;
-        margin: 10px 0 20px 0;
+    p {
+      margin: 0.6em 0;
     }
-    Taste {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 14px 22px;
-        border: 1px solid #eaeaea;
-        cursor: pointer;
+    .hint {
+      font-size: 0.95em;
+      color: #333;
     }
-    Taste:hover {
-        background: #eaeaea;
-        color: #0e0e0e;
+    .price {
+      font-size: 1.2em;
+      margin: 1em 0;
     }
-    Fußzeile {
-        display: block;
-        margin-top: 40px;
-        font-size: 14px;
-        opacity: 0.7;
+    .box {
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin: 1.5em 0;
     }
-</style>
+    a.button {
+      display: inline-block;
+      margin-top: 1.5em;
+      padding: 12px 18px;
+      border: 1px solid #111;
+      color: #111;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #444;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ÜBER DER FALZ -->
-<Abschnitt Klasse="Held">
-    <div Klasse="Held-inner">
-        <h1>Textdiagnose</h1>
+  <h1>Strukturelle Textdiagnose</h1>
 
-        <p Klasse="führen">
-            Ich sage dir, warum dein Text nicht wirkt.
-        </p>
+  <p>
+    Ich analysiere deinen Text auf Struktur, innere Logik, Brüche und Wirkung.
+    Keine Korrekturen, keine Stilkopien – sondern eine präzise Diagnose.
+  </p>
 
-        <p Klasse="führen">
-            Nicht freundlicher. Nicht schöner.<br>
-            Sondern strukturell.
-        </p>
+  <p class="hint">
+    <strong>Umfang:</strong> bis zu <strong>10.000 Wörter</strong>.<br>
+    Längere Texte (z. B. Bücher) bitte in Abschnitte oder Kapitel aufteilen.
+  </p>
 
-        <p Klasse="führen">
-            Keine Umschreibung. Kein Coaching. Kein Gespräch.<br>
-            Eine Diagnose. Klar. Direkt. Endgültig.
-        </p>
+  <div class="price">
+    <strong>Preis:</strong> 49 €
+  </div>
 
-        <p Klasse="führen">
-            Umfang: bis zu <strong>10.000 Wörter</strong> pro Diagnose.<br>
-            Längere Texte bitte in Abschnitte aufteilen.
-        </p>
+  <h2>Ablauf</h2>
+  <p>1. Du überweist den Betrag.</p>
+  <p>2. Du sendest deinen Text per E-Mail.</p>
+  <p>3. Du erhältst eine schriftliche Diagnose als PDF.</p>
 
-        <p Klasse="Preis">
-            149 € netto
-        </p>
-    </div>
-</Abschnitt>
-
-<!-- ZAHLUNG / KONTAKT -->
-<Abschnitt Klasse="Abschnitt">
-
-    <h2>Bezahlung</h2>
-
+  <div class="box">
+    <p><strong>Bitte überweise den Betrag an folgende Bankverbindung:</strong></p>
     <p>
-        Überweisen Sie den Betrag an folgende Bankverbindung:
+      <!-- IBAN HIER UNVERÄNDERT EINSETZEN -->
+      IBAN: DE•••• •••• •••• •••• ••••
     </p>
-
-    <p Klasse="Bank">
-        DE03 1001 0010 0770 6451 28
-    </p>
-
     <p>
-        Verwendungszweck:<br>
-        <strong>Textdiagnose</strong>
+      Verwendungszweck: Textdiagnose
     </p>
+  </div>
 
+  <p>
+    Nach Zahlungseingang sende deinen Text per E-Mail an:
+  </p>
+
+  <p>
+    <!-- E-MAIL-ADRESSE HIER UNVERÄNDERT EINSETZEN -->
+    <strong>deine-adresse@domain.de</strong>
+  </p>
+
+  <a class="button" href="mailto:deine-adresse@domain.de">
+    Text zur Diagnose einreichen
+  </a>
+
+  <footer>
     <p>
-        Nach Zahlungseingang reichst du deinen Text per E-Mail ein.<br>
-        Die Diagnose erhältst du als PDF.
+      Manuelle Analyse. Persönliche Antwort. Keine Automatisierung.
     </p>
-
-    <Taste onclick="window.location.href='mailto:eventservice.pweidner@gmail.com?subject=Textdiagnose'">
-        Text per E-Mail einreichen
-    </Taste>
-
-    <Fußzeile>
-        Diagnostischer Textservice
-    </Fußzeile>
-
-</Abschnitt>
+  </footer>
 
 </body>
 </html>
