@@ -11,16 +11,27 @@
       color: #eaeaea;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
-      padding: 0;
     }
 
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       padding: 48px 24px;
     }
 
-    h1, h2 {
+    .hero-inner {
+      max-width: 720px;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    h2 {
       font-weight: 600;
       margin-bottom: 24px;
     }
@@ -32,14 +43,20 @@
     }
 
     .price {
-      font-size: 1.4rem;
-      margin: 40px 0;
+      font-size: 1.6rem;
+      margin-top: 40px;
+    }
+
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 96px 24px;
     }
 
     hr {
-      margin: 64px 0;
       border: none;
       border-top: 1px solid #333;
+      margin-bottom: 64px;
     }
 
     button {
@@ -61,38 +78,48 @@
       margin-top: 120px;
       font-size: 0.9rem;
       opacity: 0.6;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Text-Diagnose: warum dein Text nicht wirkt</h1>
+  <!-- SECTION 1: ABOVE THE FOLD -->
+  <section class="hero">
+    <div class="hero-inner">
 
-    <p>
-      Ich sage dir, warum dein Text nicht wirkt – und was du radikal ändern musst.
-    </p>
+      <h1>Text-Diagnose: warum dein Text nicht wirkt</h1>
 
-    <p>
-      Keine Umschreibung. Kein Coaching. Kein Gespräch.<br>
-      Eine saubere Diagnose. Klar. Direkt. Unangenehm präzise.
-    </p>
+      <p>
+        Ich sage dir, warum dein Text nicht wirkt – und was du radikal ändern musst.
+      </p>
 
-    <p class="price">
-      Preis: <strong>149 € netto</strong>
-    </p>
+      <p>
+        Keine Umschreibung. Kein Coaching. Kein Gespräch.<br>
+        Eine saubere Diagnose. Klar. Direkt. Unangenehm präzise.
+      </p>
+
+      <p class="price">
+        Preis: <strong>149 € netto</strong>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SECTION 2: PAYMENT + CONTACT (SCROLL) -->
+  <section class="section">
 
     <hr>
 
     <h2>Bezahlung</h2>
 
     <p>
-      Überweise den Betrag auf folgende E-Bank-Adresse:
+      Überweise den Betrag auf folgende Bankverbindung:
     </p>
 
     <p style="font-weight: bold;">
-      DE03100100100770645128
+      HIER KOMMT DIE BANKVERBINDUNG HIN
     </p>
 
     <p>
@@ -105,7 +132,7 @@
     </p>
 
     <button
-      onclick="window.location.href='mailto:' + [eventservice.pweidner@gmail.com].join('.') + '?subject=Text-Diagnose%20–%20Einreichung';">
+      onclick="window.location.href='mailto:' + ['DEINNAME','DOMAIN','TLD'].join('.') + '?subject=Text-Diagnose%20–%20Einreichung';">
       Text per E-Mail einreichen
     </button>
 
@@ -113,6 +140,7 @@
       Diagnostischer Textservice
     </footer>
 
-  </div>
+  </section>
+
 </body>
 </html>
