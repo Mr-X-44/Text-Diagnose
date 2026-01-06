@@ -13,27 +13,24 @@
       margin: 0;
     }
 
+    /* ABOVE THE FOLD */
     .hero {
       min-height: 100vh;
       display: flex;
-      align-items: center;
+      align-items: center;        /* vertikal zentriert */
       justify-content: center;
-      text-align: center;
       padding: 48px 24px;
     }
 
     .hero-inner {
       max-width: 720px;
+      text-align: left;           /* wieder linksbündig */
     }
 
     h1 {
       font-weight: 600;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-weight: 600;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
+      margin-top: -24px;          /* Überschrift einen Schritt hoch */
     }
 
     p {
@@ -47,10 +44,17 @@
       margin-top: 40px;
     }
 
+    /* SCROLL SECTION */
     .section {
       max-width: 720px;
       margin: 0 auto;
       padding: 96px 24px;
+      text-align: left;
+    }
+
+    h2 {
+      font-weight: 600;
+      margin-bottom: 24px;
     }
 
     hr {
@@ -78,7 +82,7 @@
       margin-top: 120px;
       font-size: 0.9rem;
       opacity: 0.6;
-      text-align: center;
+      text-align: left;
     }
   </style>
 </head>
@@ -137,7 +141,7 @@
     </button>
 
     <footer>
-      Diagnostischer Textservice
+      @PW
     </footer>
 
   </section>
