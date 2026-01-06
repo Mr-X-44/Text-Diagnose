@@ -1,71 +1,58 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Text-Diagnose</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       background: #000;
       color: #fff;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
       margin: 0;
-      padding: 60px 20px;
+      padding: 80px 20px;
+      line-height: 1.5;
     }
 
     .container {
-      max-width: 680px;
+      max-width: 640px;
       margin: 0 auto;
     }
 
-    h1, h2 {
-      font-weight: normal;
-    }
-
     h1 {
-      font-size: 36px;
+      font-size: 40px;
+      font-weight: normal;
       margin-bottom: 10px;
     }
 
     h2 {
       font-size: 22px;
-      margin-top: 50px;
+      font-weight: normal;
+      margin-bottom: 30px;
     }
 
     p {
       font-size: 18px;
-      margin: 16px 0;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #444;
-      margin: 40px 0;
+      margin: 18px 0;
     }
 
     .price {
       font-size: 24px;
-      margin: 20px 0;
+      margin: 40px 0 10px 0;
     }
 
-    .buttons {
-      margin-top: 40px;
-    }
-
-    .button {
+    .cta {
       display: inline-block;
+      margin-top: 30px;
       padding: 14px 22px;
-      margin-right: 12px;
-      margin-bottom: 12px;
       border: 1px solid #fff;
       color: #fff;
       text-decoration: none;
       font-size: 16px;
     }
 
-    .button:hover {
+    .cta:hover {
       background: #fff;
       color: #000;
     }
@@ -82,59 +69,36 @@
   <div class="container">
 
     <h1>Text-Diagnose</h1>
-    <p><strong>Warum dein Text nicht wirkt.</strong></p>
+    <h2>Warum dein Text nicht wirkt.</h2>
 
     <p>
-      Ich sage dir, warum dein Text nicht wirkt – und was du radikal ändern musst.
+      Ich sage dir, warum dein Text scheitert – und was du radikal ändern musst.
     </p>
 
     <p>
-      Keine Umschreibung. Kein Coaching. Kein Gespräch.<br>
-      Eine Diagnose. Klar. Direkt. Unangenehm präzise.
+      Keine Umschreibung. Kein Coaching. Kein Gespräch.
     </p>
 
-    <hr>
-
-    <h2>Was du bekommst</h2>
     <p>
-      – Für wen dein Text nicht funktioniert<br>
-      – Welchen Preis er realistisch rechtfertigt<br>
-      – Wo er Vertrauen zerstört<br>
-      – Was ihn marktfähig machen würde
+      Du bekommst <strong>eine Seite Diagnose per E-Mail</strong>.<br>
+      Klar. Direkt. Unangenehm präzise.
     </p>
 
-    <hr>
+    <p class="price">
+      <strong>149 € netto</strong>
+    </p>
 
-    <h2>Preis</h2>
-    <p class="price"><strong>149 € netto</strong></p>
     <p>
-      Ein Text. Eine Diagnose. Eine E-Mail.<br>
-      Kein Abo. Keine Folgeangebote.
+      Ein Text. Eine Seite. Eine Mail.<br>
+      Danach ist Schluss.
     </p>
 
-    <div class="buttons">
-      <!-- Kontakt -->
-      <a class="button" href="mailto:DEINE-EMAIL@DOMAIN.DE?subject=Text-Diagnose">
-        Text einreichen
-      </a>
-
-      <!-- Überweisung -->
-      <a class="button" href="#zahlung">
-        Überweisung
-      </a>
-    </div>
-
-    <hr>
-
-    <h2 id="zahlung">Überweisung</h2>
-    <p>
-      Empfänger: DEIN NAME<br>
-      IBAN: DE00 0000 0000 0000 0000 00<br>
-      Verwendungszweck: Text-Diagnose
-    </p>
+    <a class="cta" href="mailto:DEINE-EMAIL@DOMAIN.DE?subject=Text-Diagnose">
+      Text zur Diagnose einreichen
+    </a>
 
     <div class="footer">
-      Schwarz auf Weiß. Mehr gibt es nicht.
+      Schwarz auf Weiß.
     </div>
 
   </div>
