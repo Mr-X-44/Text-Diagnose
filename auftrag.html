@@ -2,8 +2,9 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Text-Diagnose</title>
+  <title>Text-Diagnose – Auftrag</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background: #000;
@@ -12,8 +13,11 @@
       max-width: 680px;
       margin: 60px auto;
       padding: 0 20px;
+
+      /* BASIS */
       font-size: 16px;
       line-height: 1.5;
+      font-weight: 400;
     }
 
     p {
@@ -31,19 +35,22 @@
       text-decoration: underline;
     }
 
+    /* ÜBERSCHRIFTEN – minimal größer */
     strong {
+      font-size: 18px;
       font-weight: 600;
     }
 
-    small {
-      color: #aaa;
-      font-size: 14px;
-    }
-
+    /* PREIS – bewusst größer */
     .preis {
       font-size: 22px;
       font-weight: 600;
-      color: #fff;
+    }
+
+    /* MINI-TEXTE – bleiben klein (wie gewünscht) */
+    small {
+      font-size: 14px;
+      color: #aaa;
     }
 
     .zahlung-klein {
@@ -58,11 +65,14 @@
     }
   </style>
 </head>
+
 <body>
 
 <p><strong>1. Zahlung</strong></p>
 
-<p>Preis:<br><span class="preis">149 € netto</span></p>
+<p>Preis:<br>
+<span class="preis">149 € netto</span>
+</p>
 
 <p class="zahlung-klein">
 Überweisung an:<br>
@@ -84,7 +94,9 @@ Text-Diagnose
 <p>Nach Zahlungseingang reichst du deinen Text hier ein:</p>
 
 <p>
-<a href="mailto:text@textdiagnose.de?subject=Text-Diagnose">Text einreichen</a>
+<a href="mailto:text@textdiagnose.de?subject=Text-Diagnose">
+Text einreichen
+</a>
 </p>
 
 <p>
@@ -99,15 +111,6 @@ Zusätzlich: Rechnungsname
 
 <p><strong>3. Ergebnis</strong></p>
 
-<p>Eine Seite Diagnose per E-Mail.<br>
-Klar. Direkt. Unangenehm präzise.
-</p>
-
-<p>Danach ist der Auftrag beendet.</p>
-
-<hr>
-
-<p><small>Ein Text. Eine Diagnose. Kein Nachgespräch.</small></p>
-
-</body>
-</html>
+<p>
+Eine Seite Diagnose per E-Mail.<br>
+Klar. Direkt. Unangenehm p
