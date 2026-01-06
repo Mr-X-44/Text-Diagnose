@@ -1,48 +1,62 @@
-<!DOCTYPE html><html lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Text-Diagnose: Warum dein Text nicht wirkt</title>
+  <meta charset="UTF-8">
+  <title>Text-Diagnose</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: #0e0e0e;
       color: #eaeaea;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
     }
+
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 80px 24px;
+      padding: 48px 24px;
     }
-    h1 {
-      font-size: 2.6rem;
+
+    h1, h2 {
       font-weight: 600;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
+
     p {
       font-size: 1.1rem;
       line-height: 1.6;
       margin-bottom: 24px;
     }
+
     .price {
       font-size: 1.4rem;
       margin: 40px 0;
     }
-    .cta {
-      display: inline-block;
-      margin-top: 32px;
-      padding: 14px 28px;
+
+    hr {
+      margin: 64px 0;
+      border: none;
+      border-top: 1px solid #333;
+    }
+
+    button {
+      padding: 14px 24px;
+      background: #000;
+      color: #fff;
       border: 1px solid #eaeaea;
-      text-decoration: none;
-      color: #eaeaea;
-      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
     }
-    .cta:hover {
+
+    button:hover {
       background: #eaeaea;
-      color: #0e0e0e;
+      color: #000;
     }
+
     footer {
       margin-top: 120px;
       font-size: 0.9rem;
@@ -50,63 +64,55 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Text-Diagnose: warum dein Text nicht wirkt</h1><p>
-  Ich sage dir, warum dein Text nicht wirkt – und was du radikal ändern musst.
-</p>
 
-<p>
-  Keine Umschreibung. Kein Coaching. Kein Gespräch.
-  Eine Seite Diagnose. Klar. Direkt. Unangenehm präzise.
-</p>
+    <h1>Text-Diagnose: warum dein Text nicht wirkt</h1>
 
-<p class="price">
-  Preis: <strong>149 € netto</strong>
-</p>
+    <p>
+      Ich sage dir, warum dein Text nicht wirkt – und was du radikal ändern musst.
+    </p>
 
-<a class="cta" href="mailto:eventservice.pweidner@gmail.com?subject=Text-Diagnose">
-  Text einsenden
-</a>
+    <p>
+      Keine Umschreibung. Kein Coaching. Kein Gespräch.<br>
+      Eine saubere Diagnose. Klar. Direkt. Unangenehm präzise.
+    </p>
 
-<footer>
-  © Paul Weidner
-</footer>
+    <p class="price">
+      Preis: <strong>149 € netto</strong>
+    </p>
+
+    <hr>
+
+    <h2>Bezahlung</h2>
+
+    <p>
+      Überweise den Betrag auf folgende E-Bank-Adresse:
+    </p>
+
+    <p style="font-weight: bold;">
+      DE03100100100770645128
+    </p>
+
+    <p>
+      Verwendungszweck:<br>
+      <strong>Text-Diagnose</strong>
+    </p>
+
+    <p>
+      Nach Zahlungseingang kannst du deinen Text per E-Mail einreichen.
+    </p>
+
+    <button
+      onclick="window.location.href='mailto:' + [eventservice.pweidner@gmail.com].join('.') + '?subject=Text-Diagnose%20–%20Einreichung';">
+      Text per E-Mail einreichen
+    </button>
+
+    <footer>
+      Diagnostischer Textservice
+    </footer>
 
   </div>
 </body>
 </html>
-<hr>
-
-<h2>Bezahlung</h2>
-
-<p>
-Überweise den Betrag auf folgende E-Bank-Adresse:
-</p>
-
-<p style="font-weight: bold;">
-HIER KOMMT DIE E-BANK-REIHE HIN
-</p>
-
-<p>
-Verwendungszweck:<br>
-<b>Text-Diagnose</b>
-</p>
-
-<p>
-Nach Zahlungseingang kannst du deinen Text per E-Mail einreichen.
-</p>
-
-<button
-  onclick="window.location.href='mailto:' + ['DEINNAME','DOMAIN','TLD'].join('.') + '?subject=Text-Diagnose%20–%20Einreichung';"
-  style="
-    padding:14px 20px;
-    background:#000;
-    color:#fff;
-    border:none;
-    font-weight:bold;
-    border-radius:4px;
-    cursor:pointer;
-  ">
-Text per E-Mail einreichen
-</button>
